@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shetty Swastik Suresh | Data Analyst Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0f172a,#2563eb,#06b6d4);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero{
+    max-width:900px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    font-size:1.4rem;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.contact{
+    margin-top:25px;
+}
+
+.contact a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:500;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 30px;
+    background:white;
+    color:#2563eb;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Section */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#0f172a;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:100px;
+    height:4px;
+    background:#2563eb;
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* About */
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Skills */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+}
+
+.skill-card h3{
+    margin-top:10px;
+}
+
+/* Projects */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-header{
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    padding:20px;
+}
+
+.project-content{
+    padding:25px;
+}
+
+/* Education */
+.education-card{
+    background:white;
+    padding:30px;
+    border-left:6px solid #2563eb;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Contact */
+.contact-section{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+.contact-box a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header>
+<div class="hero">
+
+    <img src="https://via.placeholder.com/180" alt="Profile Photo">
+
+    <h1>Shetty Swastik Suresh</h1>
+
+    <h3>MBA Graduate | Data Analyst | Business Intelligence Enthusiast</h3>
+
+    <p>
+        Passionate about transforming data into meaningful insights.
+        Skilled in Excel, SQL, Power BI, Python, Data Analytics, and GitHub,
+        with a strong interest in Business Intelligence and Data-Driven
+        Decision Making.
+    </p>
+
+    <div class="contact">
+        <a href="tel:9324024674">📱 9324024674</a>
+        <a href="mailto:shettyswastik1265@gmail.com">📧 Email</a>
+    </div>
+
+    <a href="#about" class="btn">Explore Portfolio</a>
+
+</div>
+</header>
+
+<!-- About -->
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+    <div class="about-card">
+        <h3>Professional Summary</h3>
+        <br>
+        <p>
+            MBA graduate from SMVITM, Udupi with expertise in Data Analytics,
+            Dashboard Development, SQL, Python, and Business Intelligence.
+            Dedicated to solving business problems through data-driven
+            strategies and analytical thinking.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h3>Career Objective</h3>
+        <br>
+        <p>
+            To build a successful career in Data Analytics and Business
+            Intelligence by leveraging analytical skills, business knowledge,
+            and technology to create impactful solutions for organizations.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+<section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="education-card">
+    <h3>Master of Business Administration (MBA)</h3>
+    <br>
+    <p><strong>Institution:</strong> SMVITM, Udupi</p>
+    <p><strong>Specialization:</strong> Business Management & Analytics</p>
+</div>
+
+</section>
+
+<!-- Skills -->
+<section>
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Excel</h3>
+</div>
+
+<div class="skill-card">
+<h3>SQL</h3>
+</div>
+
+<div class="skill-card">
+<h3>Power BI</h3>
+</div>
+
+<div class="skill-card">
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<h3>Data Analytics</h3>
+</div>
+
+<div class="skill-card">
+<h3>GitHub</h3>
+</div>
+
+<div class="skill-card">
+<h3>Dashboard Development</h3>
+</div>
+
+<div class="skill-card">
+<h3>Business Intelligence</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section>
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<div class="project-header">
+<h3>Financial Literacy & Investment Decision</h3>
+</div>
+<div class="project-content">
+<p>
+Conducted extensive research on the impact of financial literacy on
+investment decision-making and investor behaviour.
+</p>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>Mutual Fund vs ETF Analysis</h3>
+</div>
+<div class="project-content">
+<p>
+Compared performance, risk, returns, and liquidity of Mutual Funds
+and ETFs using analytical techniques.
+</p>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>Power BI Dashboard</h3>
+</div>
+<div class="project-content">
+<p>
+Created interactive dashboards and KPI reports to support
+business decision-making and performance monitoring.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section class="contact-section">
+
+<h2 class="section-title" style="color:white;">Contact Me</h2>
+
+<div class="contact-box">
+
+<p>📱 Mobile: 9324024674</p>
+
+<p>
+📧 Email:
+<a href="mailto:shettyswastik1265@gmail.com">
+shettyswastik1265@gmail.com
+</a>
+</p>
+
+<p>
+🔗 GitHub:
+<a href="#">Add Your GitHub Link Here</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Shetty Swastik Suresh | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
